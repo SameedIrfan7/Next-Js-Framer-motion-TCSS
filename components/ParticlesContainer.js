@@ -47,13 +47,13 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: "#e68e2e",
+            value: "#e9af00",
           },
           links: {
-            color: "#f5d393",
+            color: "#eb0000",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.,
             width: 1,
           },
           collisions: {
@@ -80,7 +80,7 @@ const ParticlesContainer = () => {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
             value: {

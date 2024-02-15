@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Avatar from "../../components/Avatar"; // Make sure Avatar component is properly imported
 import Circles from "../../components/Circles"; // Make sure Circles component is properly imported
+import ParticlesContainer from "../../components/ParticlesContainer";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import CountUp from "react-countup";
@@ -227,6 +229,10 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* {particles} */}
+      <ParticlesContainer/>
+      
     </div>
   );
 };

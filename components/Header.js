@@ -19,19 +19,19 @@ const Header = () => {
           {/* <Link href={'/'}>
             <Image src={"/logo.svg"} width={220} height={46} priority={true} />
           </Link> */}
-          {/* <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto "> */}
+          <div className=" width={220} height={46} priority={true} flex flex-col">
             {/* {title} */}
-            {/* <motion.h1
+            <motion.h4
               variants={fadeIn("down", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2"
-            > */}
-              {/* Sameed
+              className="h3"
+            >
+              Sameed
               <span className="text-accent"> Irfan </span>
-            </motion.h1>
-          </div>  */}
+            </motion.h4>
+          </div> 
           {/* {socials} */}
           <Socials />
         </div>
