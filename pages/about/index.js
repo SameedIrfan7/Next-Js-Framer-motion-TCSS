@@ -14,13 +14,25 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaBootstrap,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiNumpy,
+  SiPandas,
+  SiTensorflow,
+  SiScikitlearn,
+  SiNodedotjs,
+  SiDjango,
+  SiFlask,
+  SiTailwindcss,
+  SiPytorch,
+  SiKeras,
+  SiOpencv,
+  SiYolo,
 } from "react-icons/si";
 
 // Define aboutData
@@ -29,20 +41,40 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Front Development",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
+          <FaBootstrap/>,
+          <SiTailwindcss/>
+        ],
+      },
+      {
+        title: "Backend Development",
+        icons: [
+          <SiNodedotjs/>,
+          <SiDjango/>,
+          <SiFlask/>,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
         ],
       },
       {
         title: "UI/UX Design",
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+      },
+      {
+        title: "Machine Learning",
+        icons: [<SiNumpy/>, <SiPandas/>, <SiScikitlearn/>,],
+      },
+      {
+        title: "Deep Learning",
+        icons: [<SiTensorflow/>, <SiPytorch/>, <SiKeras/>,],
+      },
+      {
+        title: "Computer Vision",
+        icons: [<SiOpencv/>, <SiYolo/>,],
       },
     ],
   },
@@ -51,46 +83,46 @@ const aboutData = [
     info: [
       {
         title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        stage: "2024",
       },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
+      // {
+      //   title: "Adobe Design Achievement Awards - Finalist",
+      //   stage: "2009 - 2010",
+      // },
     ],
   },
   {
     title: "experience",
     info: [
+      // {
+      //   title: "UX/UI Designer - XYZ Company",
+      //   stage: "2012 - 2023",
+      // },
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Web Developer - ",
+        stage: "23-2024",
       },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
+      // {
+      //   title: "Intern - DEF Corporation",
+      //   stage: "2008 - 2010",
+      // },
     ],
   },
   {
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Web Development - ",
+        stage: "2023",
       },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+      // {
+      //   title: "Computer Science Diploma - AV Technical Institute",
+      //   stage: "2009",
+      // },
+      // {
+      //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+      //   stage: "2006",
+      // },
     ],
   },
 ];
@@ -107,7 +139,16 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[540px]"
+      >
+        <Avatar />
+      </motion.div>
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -right-[440px]"
       >
         <Avatar />
       </motion.div>
@@ -121,8 +162,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">Stories </span>
-            birth magnificeint designs
+            Capturing <span className="text-accent">Stories </span>
+            with code
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -131,8 +172,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            2 years i started to learn today im here, im very glad about myself
-            that i have acheived and learnt
+            I'm a Web Developer and Machine Learning Enthusiast
           </motion.p>
           {/* {counters} */}
           <motion.div

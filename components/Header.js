@@ -16,9 +16,6 @@ const Header = () => {
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           {/* {logo} */}
-          {/* <Link href={'/'}>
-            <Image src={"/logo.svg"} width={220} height={46} priority={true} />
-          </Link> */}
           <div className=" width={220} height={46} priority={true} flex flex-col">
             {/* {title} */}
             <motion.h4
@@ -26,10 +23,10 @@ const Header = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h3"
+              className="h3 font-extrabold "
             >
-              Sameed
-              <span className="text-accent"> Irfan </span>
+              SAMEED
+              <span className="text-accent"> IRFAN </span>
             </motion.h4>
           </div> 
           {/* {socials} */}

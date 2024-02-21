@@ -9,7 +9,6 @@ const sora = Sora({
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import TopLeftImg from "../components/TopLeftImg";
-import { children } from "react";
 
 const Layout = ({ children }) => {
   return (
