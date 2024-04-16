@@ -66,15 +66,15 @@ const aboutData = [
       },
       {
         title: "Machine Learning",
-        icons: [<SiNumpy/>, <SiPandas/>, <SiScikitlearn/>,],
+        icons: [<SiNumpy />, <SiPandas />, <SiScikitlearn />,],
       },
       {
         title: "Deep Learning",
-        icons: [<SiTensorflow/>, <SiPytorch/>, <SiKeras/>,],
+        icons: [<SiTensorflow />, <SiPytorch />, <SiKeras />,],
       },
       {
         title: "Computer Vision",
-        icons: [<SiOpencv/>, <SiYolo/>,],
+        icons: [<SiOpencv />, <SiYolo />,],
       },
     ],
   },
@@ -166,14 +166,14 @@ const About = () => {
             with code
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
-          >
-            I'm a Web Developer and Machine Learning Enthusiast
-          </motion.p>
+  variants={fadeIn("right", 0.4)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+>
+  I&apos;m a Web Developer and Machine Learning Enthusiast
+</motion.p>
           {/* {counters} */}
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -260,7 +260,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/* {icons} */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div key={itemIndex} className="text-2xl text-white">{icon}</div>;
                     })}
                   </div>
                 </div>
